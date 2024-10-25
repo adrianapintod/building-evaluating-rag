@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "building-evaluating-rag"
+version = "0.1.0"
+description = ""
+authors = ["Adriana Pinto <luzadriana.pin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+llama-index = "^0.11.1"
+python-dotenv = "^1.0.1"
+trulens-eval = "^0.33.0"
+openai = "^1.42.0"
+langchain-openai = "^0.1.22"
+llama-index-embeddings-huggingface = "^0.3.0"
+ipywidgets = "^8.1.5"
+llama-index-llms-langchain = "^0.4.1"
+llama-index-llms-azure-openai = "^0.2.1"
+llama-index-llms-ollama = "^0.3.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.3"
+ruff = "^0.4.10"
+jupyterlab = "^4.2.2"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
